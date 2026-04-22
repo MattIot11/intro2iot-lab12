@@ -41,24 +41,6 @@ bool isRoomDark() {
   // TODO: Fix this logic so it returns true when it's dark
   return false; // <-- incorrect for now
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // ===============================
 // Manual Switch Control – Student 2
 bool buttonState = false;
