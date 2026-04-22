@@ -37,9 +37,17 @@ bool isRoomDark() {
   int lightLevel = analogRead(lightSensorPin);
   Serial.print("Light Level: ");
   Serial.println(lightLevel);
+  delay(1000); // To be able to read the values
 
   // TODO: Fix this logic so it returns true when it's dark
-  return false; // <-- incorrect for now
+  if  (lightLevel <= darkThreshold) {
+    // Room is dark
+    return true; // <-- incorrect for now
+  }
+  else {
+    // Room is light
+    return false;
+  }
 }
 // ===============================
 // Manual Switch Control – Student 2
