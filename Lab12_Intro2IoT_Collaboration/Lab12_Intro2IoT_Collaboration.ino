@@ -60,4 +60,6 @@ bool isButtonActivated() {
   }
 
   // HINT: Serial.print should say "ON" or "OFF" too
+  lastreading = state;
+  return buttonState;
 }
